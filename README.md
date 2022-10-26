@@ -42,8 +42,8 @@ Once the default launcher is disabled, press the Home button on the remote, and 
 
 #### Disable default launcher
 ```shell
-# Disable com.google.android.apps.tv.launcherx which is the default launcher on CCwGTV
-$ adb shell pm disable-user --user 0 com.google.android.apps.tv.launcherx
+# Disable com.google.android.tvlauncher which is the default launcher on CCwGTV
+$ adb shell pm disable-user --user 0 com.google.android.tvlauncher
 # com.google.android.tungsten.setupwraith will then be used as a 'fallback' and will automatically
 # re-enable the default launcher, so disable it as well
 $ adb shell pm disable-user --user 0 com.google.android.tungsten.setupwraith
@@ -51,7 +51,7 @@ $ adb shell pm disable-user --user 0 com.google.android.tungsten.setupwraith
 
 #### Re-enable default launcher
 ```shell
-$ adb shell pm enable com.google.android.apps.tv.launcherx
+$ adb shell pm enable com.google.android.tvlauncher
 $ adb shell pm enable com.google.android.tungsten.setupwraith
 ```
 
